@@ -1,7 +1,16 @@
 import React from "react";
+import { Footer, HeroSection, Header, Card } from "../components/index";
 
-const index = () => {
-  return <div>index</div>;
+const home = () => {
+  return (
+    <div className="bg-[#1A!A!A]">
+      hey
+      {/* <Header />
+      <HeroSection />
+      <Card />
+      <Footer /> */}
+    </div>
+  );
 };
 
-export default index;
+export default home;
