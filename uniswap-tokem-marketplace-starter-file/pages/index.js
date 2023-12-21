@@ -5,8 +5,8 @@ const home = () => {
   return (
     <div className="bg-[#1A1A1A]">
       <Header />
-      {/*<HeroSection />
-      <Card />
+      <HeroSection />
+      {/*<Card />
       <Footer /> */}
     </div>
   );
