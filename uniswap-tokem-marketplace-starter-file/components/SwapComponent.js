@@ -30,7 +30,7 @@ const SwapComponent = () => {
 
   const srcTokenObj = {
     id: "srcToken",
-    valueL: inputValue,
+    value: inputValue,
     setValue: setInputValue,
     defaultValue: srcToken,
     ignoreValue: destToken,
@@ -71,11 +71,7 @@ const SwapComponent = () => {
   }, [inputValue, destToken]);
 
   useEffect(() => {
-    if (
-      document.activeElement !== inputValueRef.current &&
-      document.activeElement.ariaLabel !== "destToken" &&
-      !isReversed.current
-    )
+    if (document.activeElement !== inputValueRef.current && !isReversed.current)
       populateInputValue(outputValue);
     setDestTokenComp(<SwapField obj={destTokenObj} ref={outputValueRef} />);
     if (outputValue?.length === 0) setInputValue("");

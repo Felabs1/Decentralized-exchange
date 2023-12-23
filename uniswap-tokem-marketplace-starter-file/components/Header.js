@@ -47,6 +47,15 @@ const Header = () => {
             <li className="flex">
               <a
                 rel="noopener noreferrer"
+                href="/tokens"
+                className="flex items-center px-4 -mb-1 dark:border-transparent text-[#7765f3] border-[#7765f3]"
+              >
+                Tokens
+              </a>
+            </li>
+            <li className="flex">
+              <a
+                rel="noopener noreferrer"
                 href="#"
                 className="flex items-center px-4 -mb-1 dark:border-transparent"
               >

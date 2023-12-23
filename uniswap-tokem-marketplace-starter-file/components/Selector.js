@@ -60,13 +60,13 @@ const Selector = ({ defaultValue, ignoreValue, setToken, id }) => {
         }}
       >
         {(item) => (
-          <Dropdown.item
+          <Dropdown.Item
             aria-label={id}
             key={item.key}
             color={item.key === "delete" ? "error" : "default"}
           >
             {item.name}
-          </Dropdown.item>
+          </Dropdown.Item>
         )}
       </Dropdown.Menu>
     </Dropdown>
